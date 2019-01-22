@@ -1,0 +1,28 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<h1>Edit Video</h1>
+
+<div>      
+        <img src="../images/{{video._id}}.jpg" height="200" width="200">
+    </div>
+
+<form>
+    
+    <div>
+        <label>Title</label>		
+        <input ng-model="video.title"></input>
+    </div>
+
+    <div>
+        <label>Genre</label>
+        <input ng-model="video.genre"></input>
+    </div>
+    <div>
+        <label>Description</label>
+        <textarea ng-model="video.description"></textarea>
+    </div>
+    <input type="button" value="Save" ng-click="save()"></input>	
+</form>
+</html>

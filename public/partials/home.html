@@ -1,0 +1,29 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+
+</style>
+</head>
+<h2>Video Rental</h2>
+<a href="/#/add-video">Add a new Video</a>
+
+<ul>
+	<li ng-repeat='video in videos'>
+		
+		
+	    
+        	<h5><a href="/#/video/{{video._id}}">
+            	{{video.title}}
+        	</a>
+        	<a href="/#/video/delete/{{video._id}}">
+            	<i class="glyphicon glyphicon-trash"></i>
+        	</a></h5>
+        	<img src="../images/{{video._id}}.jpg" height="100" width="100">
+        	<p>Genre: {{video.genre}}</p>
+        	<p>Description: {{video.description}}</p>
+   		
+    </li>
+</ul>
+
+</html>
